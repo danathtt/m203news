@@ -1,0 +1,76 @@
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+}
+body{
+  background: linear-gradient(to bottom left, #455FE7 50%, #3043a2 50%);
+  font-family: 'Inter', sans-serif;
+  -ms-overflow-style: none; }
+::-webkit-scrollbar { display: none; }
+#title{
+  color: #FFFFFF;
+  font-size: 200px;
+  text-align: left;
+  padding-left: 74px;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+#강조{
+  color: #FFEF5E;
+}
+#arrow{
+  align-items: baseline;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:1000px;
+  -webkit-animation: mover 1.5s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+section{
+  position:relative;
+  width:100%;
+  margin:0 auto;
+  height: 1900px;
+  background-color: black;
+}
+section h2{
+  color: white;
+  font-size:3em;
+  text-align: right;
+  border-bottom: solid white;
+  padding-bottom: 20px;
+  letter-spacing: 65px;
+  margin-bottom: 0px;
+}
+section h3{
+  color: white;
+  font-size:2.5em;
+  text-align: right;
+  padding-bottom: 20px;
+  letter-spacing: 10px;
+  padding-right: 30px;
+}
+section img{
+  width: 60%;
+  transition: all ease 0.8s;
+}
+section img:hover{
+  transform: rotate( -5deg );
+}
+.backgroundsheet{
+  background-color: black;
+  width:95%;
+  margin: auto;
+  height: 100%;
+  z-index: -1;
+}
